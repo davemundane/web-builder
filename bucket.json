@@ -1,0 +1,15 @@
+{
+    "Resources": {
+	"ThisIsMyBucket": {
+		"Type" : "AWS::S3::Bucket",
+		 "Properties" : {
+			"AccessControl" : "BucketOwnerFullControl",
+			"BucketName" : "JustATestBucket",
+			"WebsiteConfiguration" : {
+				"ErrorDocument" : {"Key" : "error.html"},
+  				"IndexDocument" : {"Suffix" : "index.html"}
+						}
+				}
+			}
+		}
+}
