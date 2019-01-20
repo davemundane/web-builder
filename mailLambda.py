@@ -15,7 +15,7 @@ def lambda_handler(event, context):
     
     client = boto3.client('sns', region_name='us-east-1')
     client.publish(
-        TopicArn="arn:aws:sns:us-east-1:943161404748:LamdbaHandler", 
+        TopicArn="", 
         Message=emailString)
     
     return {
